@@ -8,6 +8,6 @@ export default (app) => {
     })
   });
   app.get('/employee', EmployeeController.getEmployees);
-  app.post('/employee')
+  app.post('/employee', EmployeeController.createEmployee);
   app.get('/employee/:employee_id', EmployeeController.getEmployee);
 };

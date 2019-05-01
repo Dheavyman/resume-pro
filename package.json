@@ -7,7 +7,7 @@
     "migrate": "sequelize db:migrate",
     "unmigrate": "sequelize db:migrate:undo",
     "unmigrate:all": "sequelize db:migrate:undo:all",
-    "seed:database": "npm run unmigrate:all && npm run migrate && babel-node ./server/seeders",
+    "seed:database": "babel-node ./server/seeders",
     "start:dev": "nodemon --exec babel-node ./server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

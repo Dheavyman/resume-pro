@@ -1,6 +1,6 @@
-import { db } from '../models';
+import models from '../models';
 
-const Employee = db.Employee
+const Employee = models.Employee
 
 class EmployeeController {
   static createEmployee(req, res) {
